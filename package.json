@@ -1,0 +1,19 @@
+{
+  "name": "projek-ujikom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "be": "npm run dev --prefix be",
+    "fe": "npm run dev --prefix fe",
+    "dev": "concurrently -n \"BE,FE\" -c \"cyan,magenta\" \"npm run be\" \"npm run fe\"",
+    "build": "npm run build --prefix be && npm run build --prefix fe"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
